@@ -1,0 +1,125 @@
+.logo {
+    height: 95px;
+    position: fixed;
+    top: 50px;
+    left: 80px;
+    width: 100%;
+    z-index: 99;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo .ukicomp {
+    position: relative;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    font-family: sans-serif;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background: url("./cdn/harvester.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.hero .info {
+    position: fixed;
+    width: 60vw;
+    height: 50vh;
+    top: 30vh;
+    left: -100%;
+    animation: niceLeft 2s forwards;
+    background: rgba(51, 47, 47, 0.9);
+}
+
+@keyframes niceLeft {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 80px;
+    }
+}
+
+.hero .info .strHR {
+    position: relative;
+    color: white;
+    left: 40px;
+    top: 40px;
+    font-size: 2.7em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(27), blink 800ms steps(27) infinite;
+    border-right: 5px solid orange;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: orange;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+.hero .info .headInfo {
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    font-size: 1.2em;
+    color: greenyellow;
+    animation: fadeIn 5s forwards;
+}
+
+.hero .info .flexInfo {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 40px;
+    top: 180px;
+}
+
+.hero .infoCard {
+    padding: 5px;
+}
+
+.hero .infoCard img {
+    float: left;
+}
+
+.hero .infoCard .textInfo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 8px;
+}
