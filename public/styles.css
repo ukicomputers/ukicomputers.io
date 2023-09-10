@@ -21,6 +21,7 @@
 .logo .ukicomp {
     position: relative;
     font-size: 30px;
+    font-weight: 900;
     color: white;
     font-family: sans-serif;
     top: 5px;
@@ -41,17 +42,14 @@
 
 .hero .info {
     position: fixed;
-    width: 60vw;
-    height: 50vh;
+    display: block;
+    padding-left: 40px;
+    padding-right: 160px;
+    padding-bottom: 300px;
     top: 30vh;
     left: -100%;
     animation: niceLeft 2s forwards;
     background: rgba(51, 47, 47, 0.9);
-}
-
-.hero .info {
-    top: 50%;
-    left: 40px;;
 }
 
 @keyframes niceLeft {
@@ -68,6 +66,7 @@
     position: relative;
     color: white;
     font-size: 2.7em;
+    top: 40px;
     white-space: nowrap;
     overflow: hidden;
     animation: typewriter 2s steps(27), blink 800ms steps(27) infinite;
@@ -96,6 +95,7 @@
 
 .hero .info .headInfo {
     position: absolute;
+    left: 40px;
     top: 120px;
     font-size: 1.2em;
     color: greenyellow;
