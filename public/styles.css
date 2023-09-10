@@ -21,7 +21,7 @@
 .logo .ukicomp {
     position: relative;
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 700;
     color: white;
     font-family: sans-serif;
     top: 5px;
@@ -45,7 +45,7 @@
     display: block;
     padding-left: 40px;
     padding-right: 160px;
-    padding-bottom: 300px;
+    padding-bottom: 270px;
     top: 30vh;
     left: -100%;
     animation: niceLeft 2s forwards;
@@ -64,32 +64,36 @@
 
 .hero .info .strHR {
     position: relative;
+    display: flex;
     color: white;
     font-size: 2.7em;
     top: 40px;
-    white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 2s steps(27), blink 800ms steps(27) infinite;
-    border-right: 5px solid orange;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3s steps(27, end), blink 800ms step-end infinite;
 }
 
-@keyframes typewriter {
+@keyframes typing {
     from {
-        width: 0%;
+        width: 0
     }
 
     to {
-        width: 50%;
+        width: 100%
     }
 }
 
 @keyframes blink {
-    from {
-        border-color: orange;
+
+    from,
+    to {
+        border-color: transparent
     }
 
-    to {
-        border-color: transparent;
+    50% {
+        border-color: orange
     }
 }
 
@@ -99,14 +103,15 @@
     top: 120px;
     font-size: 1.2em;
     color: greenyellow;
-    animation: fadeIn 5s forwards;
+    animation: fadeIn 4s forwards;
 }
 
 .hero .info .flexInfo {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 180px;
+    top: 170px;
+    animation: fadeIn 4s forwards;
 }
 
 .hero .infoCard {
