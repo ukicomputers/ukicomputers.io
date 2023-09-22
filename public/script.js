@@ -1,3 +1,6 @@
+var pages;
+var menu;
+
 class scrollPages {
     constructor(container) {
         this.container = container;
@@ -62,6 +65,26 @@ class scrollPages {
     }
 }
 
+class navBar {
+    constructor(id) {
+        this.id = id;
+    }
+
+    open() {
+        this.id.style.width = "100%";
+    }
+
+    close() {
+        this.id.style.width = "0%";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    new scrollPages(document.querySelector(".scrollPages"));
+    pages = new scrollPages(document.querySelector(".scrollPages"));
+    menu = new navBar(document.querySelector("#myNav"));
 });
+
+function changeView(pageNum) {
+    pages.currentPageIndex = pageNum;
+    menu.close();
+}
