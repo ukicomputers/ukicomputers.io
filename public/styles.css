@@ -60,7 +60,7 @@
     padding-bottom: 270px;
     top: 30vh;
     left: -100%;
-    animation: niceLeft 2s forwards;
+    animation: niceLeft 5s forwards;
     background: rgba(51, 47, 47, 0.9);
 }
 
