@@ -12,22 +12,23 @@
 </head>
 
 <body>
-    <div id="myNav" class="overlay">
+    <div class="navbar">
         <a class="closebtn" onclick="menu.close()">×</a>
 
-        <div class="overlay-content">
+        <div class="links">
             <a onclick="changeView(0)">Home</a>
             <a onclick="changeView(1)">Detection Accuracy</a>
             <a onclick="changeView(2)">Look into robot!</a>
-            <!--<a onclick="changeView = 3">Big Battery Life</a>
-            <a onclick="changeView = 4">Specifications</a>
-            <a onclick="changeView = 5">Contact Us</a>-->
+            <a onclick="changeView(3)">Specifications</a>
+            <a onclick="changeView(4)">Gallery</a>
+            <a onclick="changeView(5)">Contact Us</a>
         </div>
     </div>
 
     <div class="scrollPages">
-        <div class="hero" href="main">
-            <span class="ukicomp" onclick="menu.open()">ukicomputers.</span>
+        <div class="hero">
+            <span class="ukicomp">ukicomputers.</span>
+            <a class="showbtn" onclick="menu.open()">☰</a>
 
             <span class="info">
                 <span class="contents">
@@ -35,7 +36,7 @@
                     <span class="headInfo">Low cost, more efficient, fast harvesting!</span>
 
                     <span class="flexInfo">
-                        <span class="infoCard" href="detPrec">
+                        <span class="infoCard">
                             <img width="48" height="48" src="https://img.icons8.com/emoji/48/strawberry-emoji.png" />
                             <span class="textInfo">
                                 <b>Harvesting</b>
@@ -63,9 +64,12 @@
             </span>
         </div>
 
-        <div class="dpPage" href="detPrec">
-            <span class="ukicomp black" onclick="menu.open()">ukicomputers.</span>
-            <span class="wystu black">Why You Should Trust Us?</span>
+        <div class="dpPage">
+            <span class="ukicomp black">ukicomputers.</span>
+            <a class="showbtn black" onclick="menu.open()">☰</a>
+            <span class="rht black">Why You Should Trust Us?</span>
+
+            <img src="./cdn/detection.jpg">
 
             <span class="info">
                 <span class="detPrec">Detcetion<br>Precison</span>
@@ -73,13 +77,12 @@
                     trained on <b>YOLO-NAS</b> model to be most perfect. Even smallest strawberry will be detected! All
                     that thanks to <b>OpenCV</b> and <b>CPP</b> runtime power.</span>
             </span>
-
-            <img src="./cdn/detection.jpg">
         </div>
 
         <div class="mp">
-            <span class="ukicomp" onclick="menu.open()">ukicomputers.</span>
-            <span class="wystu">Why You Should Trust Us?</span>
+            <span class="ukicomp">ukicomputers.</span>
+            <a class="showbtn" onclick="menu.open()">☰</a>
+            <span class="rht">Why You Should Trust Us?</span>
 
             <span class="info">
                 <span class="allInf">
@@ -92,18 +95,120 @@
             </span>
         </div>
 
-        <!--<div class="bbl">
+        <div class="specs">
+            <span class="ukicomp black">ukicomputers.</span>
+            <a class="showbtn black" onclick="menu.open()">☰</a>
+            <span class="rht black">Specifications</span>
+
+            <span class="tblContainer">
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Harvesting</td>
+                        <td>1 ha/per hour</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>approx. 7 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Solar Panel</td>
+                        <td>battery half full for 2 hours, if on direct sunlight (optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Materials</td>
+                        <td>PLA, ZZ (Metal), Stainless Steel, ABS, Neoprene Rubber Fiberglass, Copper, Resin, Glass</td>
+                    </tr>
+                    <tr>
+                        <td>Battery</td>
+                        <td>12 Volt, 12 Ah</td>
+                    </tr>
+                    <tr>
+                        <td>Movement</td>
+                        <td>NEMA 17 Stepper Motors, 4 pcs.</td>
+                    </tr>
+                    <tr>
+                        <td>Camera</td>
+                        <td>Industrial grade linear camera</td>
+                    </tr>
+                    <tr>
+                        <td>Electronics</td>
+                        <td>STM32 Microcontroller, A4988 Drivers, Jetson AGX Orin Module (on custom PCB)</td>
+                    </tr>
+                    <tr>
+                        <td>Computing Unit Generation</td>
+                        <td>Gracehopper</td>
+                    </tr>
+                    <tr>
+                        <td>Industry Standard</td>
+                        <td>ABEC 1</td>
+                    </tr>
+                    <tr>
+                        <td>Industrial Protection</td>
+                        <td>IP30M (IP30)</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Service</td>
+                        <td>24 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>Approx. $2000 per unit</td>
+                    </tr>
+                </table>
+            </span>
+
+            <button onclick="window.open('./cdn/datasheet.pdf', '_blank')">
+                <img width="24" height="24" src="https://img.icons8.com/material/24/FFFFFF/download--v1.png" />
+                Download specifications and datasheet (PDF)
+            </button>
+        </div>
+
+        <div class="img">
             <span class="ukicomp" onclick="menu.open()">ukicomputers.</span>
-            <span class="wystu">Why You Should Trust Us?</span>
+            <a class="showbtn" onclick="menu.open()">☰</a>
+            <span class="rht">Gallery</span>
+            <h1>?/?</h1>
+            <img class="prevImg" onclick="window.open(this.src, '_blank')">
+            <img class="overl" width="100" height="100" src="https://img.icons8.com/ios/100/zoom-in--v1.png"/>
+            <img class="next" onclick="next(this)" src="./cdn/next.png" />
+            <img class="prev" onclick="prev(this)" src="./cdn/next.png" />
+        </div>
+
+        <div class="abt">
+            <span class="ukicomp" onclick="menu.open()">ukicomputers.</span>
+            <a class="showbtn" onclick="menu.open()">☰</a>
 
             <span class="info">
-                <span class="batteryShape">
-                    <span class="level">
-                        <span class="percentage"></span>
+                <span class="cntUs">Contact<br>Us</span>
+                <span class="flexInfo">
+                    <span class="infoCard" onclick="window.location.href = 'tel:38164123456'">
+                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/phone-disconnected.png" />
+                        <span class="textInfo">
+                            <b>Phone</b>
+                            <span>+38164123456</span>
+                        </span>
+                    </span>
+                    <span class="infoCard" onclick="window.location.href = 'mailto:ukicomputers@outlook.com'">
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/mail.png" />
+                        <span class="textInfo">
+                            <b>Mail</b>
+                            <span>ukicomputers@outlook.com</span>
+                        </span>
+                    </span>
+                    <span class="infoCard">
+                        <img width="48" height="48" src="https://img.icons8.com/color/48/serbia.png" />
+                        <span class="textInfo">
+                            <b>Made In Serbia</b>
+                            <span>with love by ukicomputers.</span>
+                        </span>
                     </span>
                 </span>
             </span>
-        </div>-->
+        </div>
     </div>
 </body>
 
