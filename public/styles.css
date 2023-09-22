@@ -60,7 +60,7 @@
     padding-bottom: 270px;
     top: 30vh;
     left: -100%;
-    animation: niceLeft 5s forwards;
+    animation: niceLeft 2s forwards;
     background: rgba(51, 47, 47, 0.9);
 }
 
@@ -538,6 +538,7 @@ th {
         padding-left: 0;
         padding-right: 80vw;
         padding-bottom: 55vh;
+        animation: niceLeft 5s forwards;
     }
 
     @keyframes niceLeft {
