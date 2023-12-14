@@ -1,3 +1,5 @@
+alert("This site IS NOT for selling purposes. It was developed for competition purposes (https://bit.ly/ukicomputers_verification). Licensed under CC 4.0 BY-NC license.");
+
 var pages;
 var menu;
 var img;
